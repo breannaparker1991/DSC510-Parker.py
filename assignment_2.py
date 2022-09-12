@@ -18,11 +18,11 @@ print("Hello",user_name)
 company_name = input("What is your company name?\n")
 num_feet_optic_cable = input("What is the number of feet of fiber optic cable to be installed?\n")
 num_feet_optic_cable = int(num_feet_optic_cable)
-cost_per_foot = int(0.87)
-
-cost = num_feet_optic_cable * 0.87
+cost_per_foot = 0.87
+two_decimals = "{:.2f}".format(cost_per_foot)
+cost = num_feet_optic_cable * cost_per_foot
 
 print("Company Name:",company_name)
 print("Number of Optic Feet:", num_feet_optic_cable) 
-print("Cost per foot:", cost_per_foot)
+print("Cost per foot:", two_decimals)
 print("Total Cost:", cost)
