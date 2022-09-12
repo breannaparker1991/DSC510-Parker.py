@@ -17,7 +17,8 @@ print("Hello",user_name)
 
 company_name = input("What is your company name?\n")
 num_feet_optic_cable = input("What is the number of feet of fiber optic cable to be installed?\n")
+num_feet_optic_cable = int(num_feet_optic_cable)
 
 cost = num_feet_optic_cable * 0.87
 
-print(company_name, num_feet_optic_cable, cost)
+print(f"company_name\n, num_feet_optic_cable\n, cost\n")
