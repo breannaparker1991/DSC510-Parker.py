@@ -22,8 +22,12 @@ elif (num_feet_optic_cable > 250):
   cost_per_foot = 0.70
 elif (num_feet_optic_cable > 100):
   cost_per_foot = 0.80
+elif (num_feet_optic_cable <=0):
+  cost_per_foot = 0.00
+  print("Error, please submit a positive number")
 else:
   cost_per_foot = 0.87
+
 
 
 two_decimals = "{:.2f}".format(cost_per_foot) #making sure decimals are included in calculations
