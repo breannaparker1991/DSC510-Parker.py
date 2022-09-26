@@ -3,7 +3,6 @@
 #Programming Assignment 4.1 (added a function)
 #Author Breanna Parker
 #9/25/22
-
 # A welcome message.
 # A function with two parameters.
 # A call to the function.
@@ -12,7 +11,8 @@
 # All costs should display in USD Currency Format Ex: $123.45.
 # Your program must have a properly defined main method and a properly defined call to main
 
-
+import server
+print(server.main("Hello"))
 def order_for_customer(num_feet_optic_cable, company_name): #added function
   # company_name = input("What is your company name?\n") #removed because input changed to function
   # num_feet_optic_cable = float(input("What is the number of feet of fiber optic cable to be installed?\n")) #removed because input changed to function
@@ -36,5 +36,4 @@ def order_for_customer(num_feet_optic_cable, company_name): #added function
   print("Cost per foot:", "$",two_decimals)
   print("Total Cost:","$", cost)
 
-print(greeting ("hello"))
 order_for_customer(4,'quest')
