@@ -12,9 +12,6 @@
 # All costs should display in USD Currency Format Ex: $123.45.
 # Your program must have a properly defined main method and a properly defined call to main
 
-def greeting(welcome, user_name = 'You'): #greeting function
-  user_name = input('What is your name?\n')
-  return '{}, {}'.format(welcome,user_name)
 
 def order_for_customer(num_feet_optic_cable, company_name): #added function
   # company_name = input("What is your company name?\n") #removed because input changed to function
