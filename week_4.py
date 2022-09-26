@@ -13,8 +13,9 @@
 
 import server
 print(server.main("Hello"))
-def order_for_customer(num_feet_optic_cable, company_name): #added function
-  # company_name = input("What is your company name?\n") #removed because input changed to function
+
+def order_for_customer(num_feet_optic_cable): #added function
+  company_name = input("What is your company name?\n") #request company name
   # num_feet_optic_cable = float(input("What is the number of feet of fiber optic cable to be installed?\n")) #removed because input changed to function
   if (num_feet_optic_cable > 500):
     cost_per_foot = 0.50
@@ -36,4 +37,4 @@ def order_for_customer(num_feet_optic_cable, company_name): #added function
   print("Cost per foot:", "$",two_decimals)
   print("Total Cost:","$", cost)
 
-order_for_customer(4,'quest')
+order_for_customer(4)
