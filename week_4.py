@@ -12,13 +12,13 @@
 # All costs should display in USD Currency Format Ex: $123.45.
 # Your program must have a properly defined main method and a properly defined call to main
 
-def greeting(welcome, user_name = 'You'):
+def greeting(welcome, user_name = 'You'): #greeting function
   user_name = input('What is your name?\n')
   return '{}, {}'.format(welcome,user_name)
 
-def order_for_customer(): #added function
-  company_name = input("What is your company name?\n") #user's company
-  num_feet_optic_cable = float(input("What is the number of feet of fiber optic cable to be installed?\n")) #input from user number of feet needed
+def order_for_customer(num_feet_optic_cable, company_name): #added function
+  # company_name = input("What is your company name?\n") #removed because input changed to function
+  # num_feet_optic_cable = float(input("What is the number of feet of fiber optic cable to be installed?\n")) #removed because input changed to function
   if (num_feet_optic_cable > 500):
     cost_per_foot = 0.50
   elif (num_feet_optic_cable > 250):
@@ -34,10 +34,10 @@ def order_for_customer(): #added function
   cost = num_feet_optic_cable * cost_per_foot #calculating total cost for user
   cost = round(cost,2) #rounding cost to two decimal places
   #final printed recipe
-  print("Recipt for:", user_name)
   print("Company Name:",company_name)
   print("Number of Optic Feet:", num_feet_optic_cable,"ft") 
   print("Cost per foot:", "$",two_decimals)
   print("Total Cost:","$", cost)
 
 print(greeting ("hello"))
+order_for_customer(4,'quest')
